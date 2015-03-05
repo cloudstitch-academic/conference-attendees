@@ -15,7 +15,7 @@
  */
 
 @html conference-attendees //apps.cloudstitch.io/visualizations/conference-attendees/index.html;
-@css relative(scripts.css);
+@css relative(styles.css);
 @js relative(scripts.js);
 @js relative(d3.min.js);
 @js relative(map.js);
