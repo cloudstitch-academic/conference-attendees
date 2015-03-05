@@ -17,8 +17,6 @@
 @html conference-attendees //apps.cloudstitch.io/academic/conference-attendees/index.html;
 @css relative(styles.css);
 @js relative(scripts.js);
-@js relative(d3.min.js);
-@js relative(map.js);
 @gsheet sheet http://cloudstitch.io/academic/conference-attendees/datasource/sheet;
 
 body|*[widget="academic/conference-attendees"] {"after": "attendeesWidget_Init"} :graft conference-attendees|#conference-attendees-widget;
