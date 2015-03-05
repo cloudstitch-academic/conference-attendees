@@ -14,3 +14,12 @@
  *
  */
 
+@html conference-attendees //apps.cloudstitch.io/visualizations/conference-attendees/index.html;
+@css relative(map.css);
+@js relative(geometry.js);
+@js relative(d3.min.js);
+@js relative(map.js);
+@gsheet shadedUsaMapDatasource http://cloudstitch.io/visualizations/conference-attendees/datasource/shadedUsaMapDatasource;
+
+body|*[widget="visualizations/shaded-usa-map"] {"after": "attendeesWidget_Init"} :graft conference-attendees|#shaded-usa-map;
+
