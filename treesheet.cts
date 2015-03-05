@@ -19,7 +19,7 @@
 @js relative(scripts.js);
 @js relative(d3.min.js);
 @js relative(map.js);
-@gsheet shadedUsaMapDatasource http://cloudstitch.io/visualizations/conference-attendees/datasource/shadedUsaMapDatasource;
+@gsheet shadedUsaMapDatasource http://cloudstitch.io/academic/conference-attendees/datasource/shadedUsaMapDatasource;
 
 body|*[widget="visualizations/shaded-usa-map"] {"after": "attendeesWidget_Init"} :graft conference-attendees|#shaded-usa-map;
 
