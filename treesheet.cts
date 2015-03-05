@@ -16,7 +16,7 @@
 
 @html conference-attendees //apps.cloudstitch.io/visualizations/conference-attendees/index.html;
 @css relative(scripts.css);
-@js relative(geometry.js);
+@js relative(styles.js);
 @js relative(d3.min.js);
 @js relative(map.js);
 @gsheet shadedUsaMapDatasource http://cloudstitch.io/visualizations/conference-attendees/datasource/shadedUsaMapDatasource;
