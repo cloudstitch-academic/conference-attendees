@@ -18,14 +18,14 @@
     <div id="conference-attendees-widget">
       <div class="conference-attendees-widget">
         <ul class="conference-attendees-list large-block-grid-4 medium-block-grid-3 small-block-grid-2" connect="Attendees|rows">
-          <li class="conference-attendee">
-            <img class="attendee-image" data-cts='this {"attribute": "data-email"} :is AttendeeList|Attendees!col(Email);'/>
-            <div class="attendee-name" connect="Attendees|col(Name)" ></div>            
-            <div class="attendee-organization" connect="Attendees|col(Organization)"></div>            
+          <li class="conference-attendee">            
+            <img class="attendee-image" data-cts='this {"attribute": "data-email"} :is AttendeeList|Attendees!col(Email);' data-cts='this {"attribute": "data-imageoverride"} :is AttendeeList|Attendees!col(ImageOverride);'/>
+            <div class="attendee-name" connect="Attendees|col(Name)" >Name</div>            
+            <div class="attendee-organization" connect="Attendees|col(Organization)">Org</div>            
             <div class="attendee-links">
               <a class="attendee-twitter-link" connect="Attendees|col(Twitter)">Twitter</a>  
             </div>            
-            <div class="attendee-bio" connect="Attendees|col(Bio)"></div>            
+            <div class="attendee-bio" connect="Attendees|col(Bio)">Bio</div>            
           </li>
         </ul>
       </div>

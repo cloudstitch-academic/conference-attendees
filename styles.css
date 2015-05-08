@@ -19,8 +19,7 @@
 }
 
 .conference-attendees-widget ul.conference-attendees-list li.conference-attendee .attendee-name {
-  color: #666;
-  margin-bottom: 30px;
+  color: #555;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -31,11 +30,11 @@
 .conference-attendees-widget ul.conference-attendees-list li.conference-attendee .attendee-organization {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   color: #777;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 15px;
+  line-height: 15px;
   margin-bottom: 10px;
 }
 

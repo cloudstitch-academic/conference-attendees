@@ -16,9 +16,12 @@ function attendeesWidget_Init(ctsTarget, ctsSource, ctsRelation) {
   var widget = ctsTarget.value;
   widget.find('.attendee-image').each(function(idx, e) {
     e = CTS.Util.$(e);
-    e.attr('src', get_gravatar_image_url(e.attr('data-email'), 200));
+    var fi = e.attr('data-imageoverride');
+    var em = e.attr('data-email');
+    if (fi.length > 0) {
+      e.attr('src', fi, 200));
+    } else {
+      e.attr('src', get_gravatar_image_url(e.attr('data-email'), 200));
+    }
   });
 }
-
-
-
