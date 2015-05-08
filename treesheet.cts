@@ -14,7 +14,7 @@
  *
  */
 
-@html conference-attendees //apps.cloudstitch.io/academic/conference-attendees/index.html;
+@html conference-attendees //apps.cloudstitch.io/academic/conference-attendees/widget.html;
 @css relative(styles.css);
 @js relative(scripts.js);
 @gsheet AttendeeList http://cloudstitch.io/academic/conference-attendees/datasource/AttendeeList;

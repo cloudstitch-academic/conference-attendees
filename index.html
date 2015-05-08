@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Cloudstitch Starter Page</title>
+    <title>Conference Attendees Widget</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <script src="http://static.cloudstitch.io/cloudstitch.js" app="academic/conference-attendees"></script>
@@ -11,26 +14,22 @@
   </head>
   <body>
 
-    <section data-cts='this {"after": "attendeesWidget_Init"} :graft #conference-attendees-widget'>
-    </section>
 
 
-    <div id="conference-attendees-widget">
-      <div class="conference-attendees-widget">
-        <ul class="conference-attendees-list large-block-grid-4 medium-block-grid-3 small-block-grid-2" connect="Attendees|rows">
-          <li class="conference-attendee">
-            <img class="attendee-image" data-cts='this {"attribute": "data-email"} :is AttendeeList|Attendees!col(Email);'/>
-            <div class="attendee-name" connect="Attendees|col(Name)" ></div>            
-            <div class="attendee-organization" connect="Attendees|col(Organization)"></div>            
-            <div class="attendee-links">
-              <a class="attendee-twitter-link" connect="Attendees|col(Twitter)">Twitter</a>  
-            </div>            
-            <div class="attendee-bio" connect="Attendees|col(Bio)"></div>            
-          </li>
-        </ul>
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron" style="padding: 30px; margin-top: 30px;">
+        <h1>Conference Attendees Widget</h1>
+        <p>This page shows an example of the invoking the spreadsheet-powered conference attendees widget.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="http://cloudstitch.io/academic/conference-attendees" role="button">Clone on Cloudstitch &raquo;</a>
+        </p>
       </div>
-    </div>
-    
+
+      <div widget="academic/conference-attendees"></div>
+
+    </div> <!-- /container -->
 
   </body>
 </html>
