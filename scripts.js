@@ -19,7 +19,7 @@ function attendeesWidget_Init(ctsTarget, ctsSource, ctsRelation) {
     var fi = e.attr('data-imageoverride');
     var em = e.attr('data-email');
     if (fi.length > 0) {
-      e.attr('src', fi, 200));
+      e.attr('src', fi, 200);
     } else {
       e.attr('src', get_gravatar_image_url(e.attr('data-email'), 200));
     }
